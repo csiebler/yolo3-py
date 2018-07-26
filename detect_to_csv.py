@@ -1,15 +1,9 @@
 import cv2 as cv
-import argparse
 import numpy as np
-import pandas as pd
-from copy import deepcopy
+import argparse
 from detector import yolo_detector
-import imutils
-import json
-
 
 def draw_detections(frame, detections):    
-    print(df.concat(detections))
     for o in detections:
         print(o)
         text = '%s: %.2f' % (o[1], o[2])
@@ -61,7 +55,7 @@ def keep_detecting(detector, input_file, output_video_file, output_csv_file):
         print("FPS: " + str(cv.getTickFrequency() / (cv.getTickCount() - timer)))
 
         # Display result
-        #cv.imshow(window_name, frame)
+        cv.imshow(window_name, frame)
 
         # Write to output file if required
         if output_video_file:
