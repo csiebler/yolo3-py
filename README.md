@@ -1,4 +1,4 @@
-# YOLOv3 Python to JSON
+# YOLOv3 Python to CSV
 
 A simple tool for running video or camera data through [YOLOv3](https://pjreddie.com/darknet/yolo/) and outputting predictions to a CSV file.
 
