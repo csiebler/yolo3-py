@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# darknet
+darknet/
+yolov3*.weights
+
+.DS_Store
